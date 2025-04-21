@@ -102,7 +102,7 @@
 
 @layer helper {
     .is-hidden {
-        display: none;
+        visibility: hidden;
     }
 }
 
@@ -152,7 +152,7 @@
                 width: 200px;
                 border-radius: 5px;
                 background: var(--color-white);
-
+                z-index: 999;
                 @media (width >= calc(550 / 16 * 1rem)) {
                     width: 280px;
                 }  
@@ -174,9 +174,14 @@
 
                             outline: 2px solid transparent;
                             outline-offset: 2px;
+                            cursor: pointer;
                             @media (width >= calc(550 / 16 * 1rem)) {
                                 width: 42px; height: 42px;
                             }  
+                        }
+
+                        .div__theme:is(:hover, :focus) {
+                            outline-color: var(--color-grey-lt);
                         }
 
                         .div__theme.is-active {
@@ -241,7 +246,7 @@
             .li_task-list-item {
                 display: flex; justify-content: flex-start; align-items: center; gap: 10px;
                 padding: 14px 18px;
-                background: var(--color-white_94);
+                background: var(--color-grey-lt);
                 margin-block-end: 2px;
                 border-radius: 4px;
 
@@ -258,11 +263,11 @@
                         content: "";
 
                         position: absolute; top: 8px; left: 2px;
+                        display: none;
                         width: 6px;
                         height: 2px;
                         border-radius: 5px;
-                        background-color: #000; /* temp */
-                        opacity: 1; /* temp */
+                        background-color: var(--color-grey-dk);
 
                         transform: rotate(45deg);
 
@@ -272,15 +277,23 @@
                         content: "";
 
                         position: absolute; top: 7px; left: 5px;
+                        display: none;
                         width: 9px;
                         height: 2px;
                         border-radius: 5px;
-                        background-color: #000; /* temp */
-                        opacity: 1; /* temp */
+                        background-color: var(--color-grey-dk);
 
                         transform: rotate(-45deg);
                     }
 
+                }
+
+                .button__check-icon:hover .span__check-icon::before {
+                    display: initial;
+                }
+
+                .button__check-icon:hover .span__check-icon::after {
+                    display: initial;
                 }
 
                 .p__task-text {
@@ -290,8 +303,9 @@
                 }
 
                 .button__trash-outline {
+                    display: none;
                     .svg__trash-outline {
-                        color: black;
+                        color: var(--color-grey-dk);
                     }
                 }
 
@@ -300,6 +314,15 @@
                         color: var(--color-red);
                     }
                 }
+
+            }
+
+            .li_task-list-item:is(:hover, :focus) {
+                background: var(--color-white_96);
+            }
+
+            .li_task-list-item:is(:hover, :focus) .button__trash-outline {
+                display: initial;
             }
         }
 
