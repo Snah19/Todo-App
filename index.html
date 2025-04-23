@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
+    <title>My Day</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./icons/todo-icon.jpg">
     <script src="script.js" defer></script>
@@ -27,16 +27,15 @@
                     <div class="div__themes">
                         <p class="p__theme">Theme</p>
                         <div class="div__theme-container">
-                            <div class="div__theme is-active" style="--hue: 277;"></div>
-                            <div class="div__theme" style="--hue: 298;"></div>
-                            <div class="div__theme" style="--hue: 344;"></div>
-                            <div class="div__theme" style="--hue: 2;"></div>
-                            <div class="div__theme" style="--hue: 153;"></div>
-                            <div class="div__theme" style="--hue: 177;"></div>
-                            <div class="div__theme" style="--hue: 206;"></div>
+                            <div class="div__theme" style="--hue: 206;" data-hue="206"></div>
+                            <div class="div__theme" style="--hue: 298;" data-hue="298"></div>
+                            <div class="div__theme" style="--hue: 344;" data-hue="344"></div>
+                            <div class="div__theme" style="--hue: 2;" data-hue="2"></div>
+                            <div class="div__theme" style="--hue: 153;" data-hue="153"></div>
+                            <div class="div__theme" style="--hue: 177;" data-hue="177"></div>
+                            <div class="div__theme" style="--hue: 277;" data-hue="277"></div>
                         </div>
                     </div>
-
                     <div class="div__app-info">
                         <svg class="svg__information-circle-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
                             <path d="M248,64C146.39,64,64,146.39,64,248s82.39,184,184,184,184-82.39,184-184S349.61,64,248,64Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/>
@@ -56,149 +55,7 @@
             </div>
 
             <ul class="ul__task-list">
-                <li class="li_task-list-item">
-                    <button class="button__check-icon">
-                        <span class="span__check-icon"></span>
-                    </button>
-                    <p class="p__task-text">Build a todo app</p>
 
-                    <button class="button__trash-outline">
-                        <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                            <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="80" y1="112" x2="432" y2="112"
-                              style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                            <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="256" y1="176" x2="256" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="184" y1="176" x2="192" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="328" y1="176" x2="320" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          </svg>
-                    </button>
-                </li>
-
-                <li class="li_task-list-item">
-                    <button class="button__check-icon">
-                        <span class="span__check-icon"></span>
-                    </button>
-                    <p class="p__task-text">Build a game</p>
-
-                    <button class="button__trash-outline">
-                        <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                            <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="80" y1="112" x2="432" y2="112"
-                              style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                            <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="256" y1="176" x2="256" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="184" y1="176" x2="192" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="328" y1="176" x2="320" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          </svg>
-                    </button>
-                </li>
-
-                <li class="li_task-list-item">
-                    <button class="button__check-icon">
-                        <span class="span__check-icon"></span>
-                    </button>
-                    <p class="p__task-text">Become a front-end dev</p>
-
-                    <button class="button__trash-outline">
-                        <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                            <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="80" y1="112" x2="432" y2="112"
-                              style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                            <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="256" y1="176" x2="256" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="184" y1="176" x2="192" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                            <line x1="328" y1="176" x2="320" y2="400"
-                              style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          </svg>
-                    </button>
-                </li>
-
-                <li class="li_task-list-item">
-                  <button class="button__check-icon">
-                      <span class="span__check-icon"></span>
-                  </button>
-                  <p class="p__task-text">Build a todo app</p>
-
-                  <button class="button__trash-outline">
-                      <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                          <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="80" y1="112" x2="432" y2="112"
-                            style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                          <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="256" y1="176" x2="256" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="184" y1="176" x2="192" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="328" y1="176" x2="320" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                        </svg>
-                  </button>
-                </li>
-
-                <li class="li_task-list-item">
-                  <button class="button__check-icon">
-                      <span class="span__check-icon"></span>
-                  </button>
-                  <p class="p__task-text">Build a game</p>
-
-                  <button class="button__trash-outline">
-                      <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                          <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="80" y1="112" x2="432" y2="112"
-                            style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                          <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="256" y1="176" x2="256" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="184" y1="176" x2="192" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="328" y1="176" x2="320" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                        </svg>
-                  </button>
-                </li>
-
-                <li class="li_task-list-item">
-                  <button class="button__check-icon">
-                      <span class="span__check-icon"></span>
-                  </button>
-                  <p class="p__task-text">Become a front-end dev</p>
-
-                  <button class="button__trash-outline">
-                      <svg class="svg__trash-outline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                          <path d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="80" y1="112" x2="432" y2="112"
-                            style="stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                          <path d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="256" y1="176" x2="256" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="184" y1="176" x2="192" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                          <line x1="328" y1="176" x2="320" y2="400"
-                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                        </svg>
-                  </button>
-                </li>
             </ul>
 
             <div class="div__add-task">
